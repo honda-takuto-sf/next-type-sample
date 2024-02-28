@@ -1,7 +1,14 @@
+import * as Blog from "@/features/blog/components/Index";
 import React from 'react';
 
-const BlogDetail = () => {
-  return <div>BlogDetail</div>;
+const BlogPage = () => {
+  return (
+  <div>
+    <Blog.BlogImage />
+    <Blog.BlogList />
+    <Blog.BlogCard />
+  </div>
+  );
 };
 
-export default BlogDetail;
+export default BlogPage;
