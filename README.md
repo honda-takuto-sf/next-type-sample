@@ -1,3 +1,20 @@
+## ディレクトリ・ファイルの説明
+公式ドキュメントより
+>Top-level folders are used to organize your application's code and static assets.<br>
+>最上位のフォルダーは、アプリケーションのコードと静的アセットを整理するために使用されます。<br>
+>Top-level files are used to configure your application, manage dependencies, run middleware, integrate monitoring tools, and define environment variables.<br>
+>最上位ファイルは、アプリケーションの構成、依存関係の管理、ミドルウェアの実行、監視ツールの統合、および環境変数の定義に使用されます。<br>
+
+### ディレクトリ・ファイルの説明
+- app<br>→アプリケーションのルートディレクトリ。page.tsxを置くとそこがルートになる。<br>
+  例 app/blog/page.tsxがある場合、/blogでファイルにアクセスできる。<br><br>
+- components<br>→アプリケーション全体のコンポーネントを配置するディレイクトリ。<br>
+  例 アプリケーション全体で使用するheaderやfooter、formやbuttonなど。<br><br>
+- public<br>→静的フィアルの配置するディレクトリ。<br>
+  例 画像など<br><br>
+- features<br>→ページ単体で使用するコンポーネントの配置ディレクトリ。<br>
+  例 BlogListはBlogページでしか使用されないため、componentsには配置せず、featuresに配置するなど。<br><br>
+
 ## アプリ作成時以下を設定(要検討)
 Would you like to use ESLint with this project?<br>
 →Yes<br>
