@@ -1,8 +1,8 @@
-## ディレクトリ・ファイルの説明
+## ディレクトリ・ファイル
 公式ドキュメントより
 >Top-level folders are used to organize your application's code and static assets.<br>
->最上位のフォルダーは、アプリケーションのコードと静的アセットを整理するために使用されます。<br>
 >Top-level files are used to configure your application, manage dependencies, run middleware, integrate monitoring tools, and define environment variables.<br>
+>最上位のフォルダーは、アプリケーションのコードと静的アセットを整理するために使用されます。<br>
 >最上位ファイルは、アプリケーションの構成、依存関係の管理、ミドルウェアの実行、監視ツールの統合、および環境変数の定義に使用されます。<br>
 
 ### ディレクトリ・ファイルの説明
@@ -14,6 +14,15 @@
   例 画像など<br><br>
 - features<br>→ページ単体で使用するコンポーネントの配置ディレクトリ。<br>
   例 BlogListはBlogページでしか使用されないため、componentsには配置せず、featuresに配置するなど。<br><br>
+
+
+## クライアントでレンダリングする方法
+公式ドキュメントより
+>To use Client Components, you can add the React "use client" directive at the top of a file, above your imports.<br>
+>"use client" is used to declare a boundary between a Server and Client Component modules. This means that by defining a "use client" in a file, all other modules imported into it, including child components, are considered part of the client bundle.<br>
+>クライアント・コンポーネントを使用するには、Reactの "use client "ディレクティブをファイルの一番上のimportの上に追加します。
+>「use client "は、ServerモジュールとClient Componentモジュールの境界を宣言するために使用します。つまり、"use client "を定義することで、子コンポーネントを含む他のすべてのインポートされたモジュールは、クライアントバンドルの一部とみなされます。<br>
+
 
 ## アプリ作成時以下を設定(要検討)
 Would you like to use ESLint with this project?<br>
@@ -36,6 +45,7 @@ next-app % npx create-next-app . --typescript
 ✔ Would you like to customize the default import alias (@/*)? … No / Yes
 Creating a new Next.js app
 ```
+
 ## 手順
 
 ### git clone
